@@ -9,7 +9,7 @@ options = ["rock", "paper", "scissors"]
 
 #Logic for if input is valid or exit
 while True:
-    user_input = input("Type Rock/Paper/Scissor or to exit press Q.\n").lower()
+    user_input = input("Type Rock/Paper/Scissors or to exit press Q.\n").lower()
     if user_input == "q":
         break
     if user_input not in options:
