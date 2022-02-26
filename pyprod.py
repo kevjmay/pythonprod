@@ -22,4 +22,22 @@ while True:
     print("Computer picked", computer_pick + ".")
 
     #Logic to evaluate wins
+    if user_input == "scissors" and computer_pick == "paper":
+        print("User win! Congrats!")
+        user_wins += 1
+    elif user_input == "paper" and computer_pick == "rock":
+        print("User win! Congrats!")
+        user_wins += 1
+    elif user_input == "rock" and computer_pick == "scissors":
+        print("User win! Congrats!")
+        user_wins += 1
+    elif user_input == computer_pick:
+        print("You have tied with the computer!")
+    else:
+        print("Computer win! You lost!")
+        computer_wins += 1
 
+#Comments after leaving game
+print(f"You have won {user_wins} times.")
+print(f"The computer has won {computer_wins} times.")
+print("Thank you for playing! Goodbye!")
